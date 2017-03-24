@@ -31,3 +31,7 @@
 # Debug files
 *.dSYM/
 *.su
+
+tmp
+Grace_kid.*
+Sully_*
