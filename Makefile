@@ -6,17 +6,17 @@
 #    By: tvisenti <tvisenti@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/27 09:41:16 by tvisenti          #+#    #+#              #
-#    Updated: 2017/03/27 10:42:14 by tvisenti         ###   ########.fr        #
+#    Updated: 2017/03/27 14:44:03 by tvisenti         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 .PHONY: all clean fclean re
 
-CC = gcc
+CC = clang
 
 FLAGS = -Wall -Wextra -Werror
 
-NAME = Colleen Grace
+NAME = Colleen Grace Sully
 
 all: $(NAME)
 
@@ -38,12 +38,17 @@ Sully:
 clean:
 	@rm -rf Colleen.o
 	@rm -rf Grace.o
+	@rm -rf Sully.o
 	@echo "\033[1;34mDr_Quine\t\033[1;33mCleaning obj\t\t\033[0;32m[OK]\033[0m"
 
 fclean: clean
 	@rm -rf Colleen
 	@rm -rf Grace
 	@rm -rf Grace_kid.c
+	@rm -rf Sully
+	@rm -rf Sully_*
+	@rm -rf a.out
+	@rm -rf tmp
 	@echo "\033[1;34mDr_Quine\t\033[1;33mCleaning all\t\t\033[0;32m[OK]\033[0m"
 
 re: fclean all
